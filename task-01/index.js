@@ -1,8 +1,7 @@
 const grades = [7, 9, 5, 10, 8, 6];
 
 // toate notele mai mari sau egale cu 8
-const highGrades = grades.filter(grade => grade >= 8);
-console.log('Note >= 8:', highGrades);
+const getHighGrades = (list, minGrade = 8) => list.filter(grade => grade >= minGrade);
 
 // media notelor
 const average = grades.reduce((sum, grade) => sum + grade, 0) / grades.length;
